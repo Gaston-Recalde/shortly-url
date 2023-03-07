@@ -1,0 +1,36 @@
+.nav{
+    padding: 24px 0;
+    width: 90%;
+    margin: 0 auto;
+    // border: 1px solid red;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__items{
+
+            &__ul{
+                display: none;
+            }
+        }
+
+        &__action{
+            display: none;
+        }
+
+        &__buttons{
+            .open{
+                font-size: 32px;
+                color: $grayish-violet;
+            }
+
+            .close{
+                display: none;
+                font-size: 32px;
+                color: $grayish-violet;
+            }
+        }
+    }
+}

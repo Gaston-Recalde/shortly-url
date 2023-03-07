@@ -18,4 +18,30 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.nav {
+  padding: 24px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__container__items__ul {
+  display: none;
+}
+.nav__container__action {
+  display: none;
+}
+.nav__container__buttons .open {
+  font-size: 32px;
+  color: hsl(257, 7%, 63%);
+}
+.nav__container__buttons .close {
+  display: none;
+  font-size: 32px;
+  color: hsl(257, 7%, 63%);
 }/*# sourceMappingURL=style.css.map */
