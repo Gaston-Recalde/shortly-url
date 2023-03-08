@@ -257,7 +257,7 @@
                     background-color: $dark-violet;
 
                     img{
-                        
+
                     }
                 }
 
@@ -275,4 +275,34 @@
         }
     }
 
+}
+
+.boost{
+    background-color: $dark-violet;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    // background-position: top right;
+    padding: 90px 0;
+    text-align: center;
+
+    &__h2{
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    &__button{
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        padding: 16px;
+        width: 185px;
+        font-weight: 700;
+        font-size: 18px;
+        background-color: $cyan;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $cyan-2;
+        }
+    }
 }
