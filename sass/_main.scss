@@ -2,34 +2,102 @@
     padding: 24px 0;
     width: 90%;
     margin: 0 auto;
-    // border: 1px solid red;
 
     &__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+
+        // &__logo{
+
+        // }
 
         &__items{
+            display: none;
+            position: fixed;
+            width: 90%;
+            text-align: center;
+            border-radius: 8px;
+            // margin-top: 15px;
+            background-color: $dark-violet;
+            color: #fff;
+            padding: 35px;
+            top: 80px;
 
             &__ul{
-                display: none;
+
+                li{
+                    margin-bottom: 25px;
+
+                    &:last-child{
+                        margin-bottom: 0px;
+                        padding-bottom: 25px;
+                        border-bottom: 1px solid $grayish-violet;
+                    }
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            &__action{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 25px;
+
+                .login, .sign{
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    width: 100%;
+                    padding: 16px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+                .login{
+                    background-color: transparent;
+                    border: none;
+                    margin-bottom: 10px;
+                }
+
+                .sign{
+                    background-color: $cyan;
+                    border-radius: 50px;
+
+                    &:hover{
+                        background-color: $cyan-2;
+                    }
+                }
             }
         }
 
-        &__action{
-            display: none;
-        }
 
         &__buttons{
-            .open{
+
+            .open, .close{
                 font-size: 32px;
                 color: $grayish-violet;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
+
+            // .open{
+                
+            // }
 
             .close{
                 display: none;
-                font-size: 32px;
-                color: $grayish-violet;
             }
         }
     }

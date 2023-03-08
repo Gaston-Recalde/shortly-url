@@ -29,19 +29,67 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
-.nav__container__items__ul {
+.nav__container__items {
   display: none;
+  position: fixed;
+  width: 90%;
+  text-align: center;
+  border-radius: 8px;
+  background-color: hsl(257, 27%, 26%);
+  color: #fff;
+  padding: 35px;
+  top: 80px;
 }
-.nav__container__action {
-  display: none;
+.nav__container__items__ul li {
+  margin-bottom: 25px;
 }
-.nav__container__buttons .open {
+.nav__container__items__ul li:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid hsl(257, 7%, 63%);
+}
+.nav__container__items__ul li:hover {
+  cursor: pointer;
+}
+.nav__container__items__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.nav__container__items__action .login, .nav__container__items__action .sign {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  padding: 16px;
+}
+.nav__container__items__action .login:hover, .nav__container__items__action .sign:hover {
+  cursor: pointer;
+}
+.nav__container__items__action .login {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+.nav__container__items__action .sign {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 50px;
+}
+.nav__container__items__action .sign:hover {
+  background-color: hsl(180, 91%, 58%);
+}
+.nav__container__buttons .open, .nav__container__buttons .close {
   font-size: 32px;
   color: hsl(257, 7%, 63%);
+}
+.nav__container__buttons .open:hover, .nav__container__buttons .close:hover {
+  cursor: pointer;
 }
 .nav__container__buttons .close {
   display: none;
-  font-size: 32px;
-  color: hsl(257, 7%, 63%);
 }/*# sourceMappingURL=style.css.map */
