@@ -495,30 +495,11 @@ body {
     align-self: flex-end;
   }
   .boost {
-    background-color: hsl(257, 27%, 26%);
-    background-image: url("../images/bg-boost-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 90px 0;
-    text-align: center;
+    background-image: url("../images/bg-boost-desktop.svg");
+    padding: 50px 0;
   }
   .boost__h2 {
-    color: #fff;
-    margin-bottom: 25px;
-  }
-  .boost__button {
-    border: none;
-    border-radius: 50px;
-    color: #fff;
-    padding: 16px;
-    width: 185px;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: hsl(180, 66%, 49%);
-  }
-  .boost__button:hover {
-    cursor: pointer;
-    background-color: hsl(180, 91%, 58%);
+    font-size: 32px;
   }
   .footer {
     background-color: hsl(260, 8%, 14%);
