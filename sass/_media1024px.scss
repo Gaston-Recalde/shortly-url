@@ -1,7 +1,7 @@
 @media screen and (min-width:1024px) {
     .nav{
         padding: 35px 0;
-        max-width: 1200px;
+        max-width: 1100px;
     
         &__container{
             display: flex;
@@ -87,30 +87,18 @@
     .header{
         overflow: hidden;
         position: relative;
-        // display: flex;
-        // flex-direction: row-reverse;
-        // width: 90%;
-        // max-width: 1200px;
-        // margin: 0 auto;
     
         &__img{
             position: absolute;
             width: 60%;
             right: -5%;
-            // max-width: 750px;
-    
-            // &__working{
-            //     width: 100%;
-            // }
         }
     
         &__container{
-            // position: relative;
-            // width: 90%;
-            // margin: inherit;
             text-align: left;
             padding-top: 130px;
             padding-bottom: 200px;
+            max-width: 1100px;
     
             &__h1{
                 color: $very-dark-blue;
@@ -146,111 +134,58 @@
     }
     
     .statistics{
-        padding-top: 140px;
-        background-color: $gray-2;
-        padding-bottom: 100px;
+        padding-top: 150px;
     
         &__container{
-            position: relative;
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
+            max-width: 1100px;
     
             &__links{
-                position: absolute;
-                width: 100%;
-                top: -220px;
-                padding: 24px;
-                border-radius: 8px;
-                background-image: url('../images/bg-shorten-mobile.svg');
-                background-repeat: no-repeat;
-                background-position: top right;
-                background-color: $dark-violet;
+                padding: 40px 48px;
+                background-image: url('../images/bg-shorten-desktop.svg');
         
                 form{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
-        
-                    input, button{
-                        padding: 16px;
-                        border-radius: 6px;
-                        border: none;
-                        font-size: 16px;
+                    flex-direction: row;
+
+                    input{
+                        width: 80%;
                     }
         
                     button{
-                        font-size: 18px;
-                        color: #fff;
-                        background-color: $cyan;
-                        font-weight: 700;
-    
-                        &:hover{
-                            cursor: pointer;
-                            background-color: $cyan-2;
-                        }
+                        padding: 16px 32px;
                     }
                 }
-            }
-    
-            &__h2{
-                padding-top: 25px;
-                margin-bottom: 25px;
-            }
-    
-            &__p{
-                color: $grayish-violet;
-                font-size: 16px;
-                margin-bottom: 75px;
             }
     
             &__cards{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 100px;
-    
-                position: relative;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 25px;
+                height: 350px;
     
                 .line{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    width: 10px;
-                    background-color: $cyan;
+                    top: 155px;
+                    bottom: inherit;
+                    width: 100%;
+                    height: 10px;
                 }
     
                 .card{
-                    position: relative;
-                    background-color: #fff;
-                    padding: 75px 25px 35px;
-                    padding-top: 75px;
-                    border-radius: 8px;
-                    width: 338px;
+                    text-align: left;
     
                     &__img{
-                        position: absolute;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 85px;
-                        height: 85px;
-                        top: -42px;
-                        right: 127px;
-                        border-radius: 50%;
-                        background-color: $dark-violet;
-                    }
-    
-                    &__h3{
-                        color: $dark-violet;
-                        margin-bottom: 25px;
+                        right: inherit;
                     }
     
                     &__p{
-                        color: $grayish-violet;
-                        font-size: 16px;
-                        line-height: 1.6;
+                        font-size: 15px;
+                    }
+
+                    &:first-child{
+                        align-self: flex-start;
+                    }
+
+                    &:last-child{
+                        align-self: flex-end;
                     }
                 }
             }
