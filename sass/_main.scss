@@ -9,17 +9,12 @@
         align-items: center;
         position: relative;
 
-        // &__logo{
-
-        // }
-
         &__items{
             display: none;
             position: fixed;
             width: 90%;
             text-align: center;
             border-radius: 8px;
-            // margin-top: 15px;
             background-color: $dark-violet;
             color: #fff;
             padding: 35px;
@@ -36,9 +31,14 @@
                         border-bottom: 1px solid $grayish-violet;
                     }
 
-                    &:hover{
-                        cursor: pointer;
+                    a{
+                        color: #fff;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
                     }
+
                 }
 
             }
@@ -92,10 +92,6 @@
                 }
             }
 
-            // .open{
-                
-            // }
-
             .close{
                 display: none;
             }
@@ -109,11 +105,10 @@
     &__img{
         width: 135%;
         margin-left: 5%;
-        // overflow: hidden;
+        max-width: 750px;
 
         &__working{
             width: 100%;
-            // overflow: hidden;
         }
     }
 
@@ -127,7 +122,6 @@
 
         &__h1{
             color: $very-dark-blue;
-            // font-weight: 700;
             font-size: 40px;
             line-height: 1.2;
             margin-bottom: 15px;
@@ -159,7 +153,6 @@
 }
 
 .statistics{
-    // position: relative;
     padding-top: 140px;
     background-color: $gray-2;
     padding-bottom: 100px;
@@ -178,7 +171,6 @@
             border-radius: 8px;
             background-image: url('../images/bg-shorten-mobile.svg');
             background-repeat: no-repeat;
-            // background-size: contain;
             background-position: top right;
             background-color: $dark-violet;
     
@@ -277,7 +269,6 @@
     background-color: $dark-violet;
     background-image: url('../images/bg-boost-mobile.svg');
     background-repeat: no-repeat;
-    // background-position: top right;
     background-size: cover;
     padding: 90px 0;
     text-align: center;
@@ -339,7 +330,6 @@
                     a{
                         color: $gray;
                         font-size: 15px;
-                        // font-weight: 500;
 
                         &:hover{
                             color: $cyan;
