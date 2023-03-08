@@ -86,34 +86,42 @@
     
     .header{
         overflow: hidden;
+        position: relative;
+        // display: flex;
+        // flex-direction: row-reverse;
+        // width: 90%;
+        // max-width: 1200px;
+        // margin: 0 auto;
     
         &__img{
-            width: 135%;
-            margin-left: 5%;
-            max-width: 750px;
+            position: absolute;
+            width: 60%;
+            right: -5%;
+            // max-width: 750px;
     
-            &__working{
-                width: 100%;
-            }
+            // &__working{
+            //     width: 100%;
+            // }
         }
     
         &__container{
-            position: relative;
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 170px;
+            // position: relative;
+            // width: 90%;
+            // margin: inherit;
+            text-align: left;
+            padding-top: 130px;
+            padding-bottom: 200px;
     
             &__h1{
                 color: $very-dark-blue;
-                font-size: 40px;
+                font-size: 52px;
                 line-height: 1.2;
                 margin-bottom: 15px;
             }
     
             &__p{
                 color: $grayish-violet;
+                margin: initial;
                 margin-bottom: 25px;
             }
     

@@ -1,0 +1,17 @@
+@media screen and (min-width:1200px) {
+    .header{
+    
+        &__img{
+            right: -10%;
+        }
+    
+        &__container{
+    
+            &__h1{
+                font-size: 56px;
+            }
+    
+        }
+    
+    }
+}
