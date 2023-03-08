@@ -238,6 +238,7 @@ body {
   background-color: hsl(257, 27%, 26%);
   background-image: url("../images/bg-boost-mobile.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 90px 0;
   text-align: center;
 }
@@ -258,4 +259,48 @@ body {
 .boost__button:hover {
   cursor: pointer;
   background-color: hsl(180, 91%, 58%);
+}
+
+.footer {
+  background-color: hsl(260, 8%, 14%);
+  padding: 50px 0;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+.footer__container__logo img {
+  filter: brightness(10);
+}
+.footer__container__links .link__title {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.footer__container__links ul {
+  line-height: 2;
+}
+.footer__container__links ul li a {
+  color: hsl(0, 0%, 75%);
+  font-size: 15px;
+}
+.footer__container__links ul li a:hover {
+  color: hsl(180, 66%, 49%);
+  cursor: pointer;
+}
+.footer__container__socials {
+  display: flex;
+  gap: 20px;
+}
+.footer__container__socials i {
+  color: #fff;
+  font-size: 32px;
+}
+.footer__container__socials i:hover {
+  color: hsl(180, 66%, 49%);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

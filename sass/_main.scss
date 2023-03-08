@@ -255,10 +255,6 @@
                     right: 127px;
                     border-radius: 50%;
                     background-color: $dark-violet;
-
-                    img{
-
-                    }
                 }
 
                 &__h3{
@@ -282,6 +278,7 @@
     background-image: url('../images/bg-boost-mobile.svg');
     background-repeat: no-repeat;
     // background-position: top right;
+    background-size: cover;
     padding: 90px 0;
     text-align: center;
 
@@ -303,6 +300,69 @@
         &:hover{
             cursor: pointer;
             background-color: $cyan-2;
+        }
+    }
+}
+
+.footer{
+    background-color: $very-dark-violet;
+    padding: 50px 0;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+
+        &__logo{
+
+            img{
+                filter: brightness(10);
+            }
+        }
+
+        &__links{
+
+            .link__title{
+                color: #fff;
+                margin-bottom: 25px;
+                font-size: 16px;
+            }
+
+            ul{
+                line-height: 2;
+
+                li{
+
+                    a{
+                        color: $gray;
+                        font-size: 15px;
+                        // font-weight: 500;
+
+                        &:hover{
+                            color: $cyan;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__socials{
+            display: flex;
+            gap: 20px;
+
+            i{
+                color: #fff;
+                font-size: 32px;
+
+                &:hover{
+                    color: $cyan;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
