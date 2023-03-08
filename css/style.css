@@ -92,4 +92,90 @@ body {
 }
 .nav__container__buttons .close {
   display: none;
+}
+
+.header {
+  overflow: hidden;
+}
+.header__img {
+  width: 135%;
+  margin-left: 5%;
+}
+.header__img__working {
+  width: 100%;
+}
+.header__container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 170px;
+}
+.header__container__h1 {
+  color: hsl(255, 11%, 22%);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.header__container__p {
+  color: hsl(257, 7%, 63%);
+  margin-bottom: 25px;
+}
+.header__container__button {
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 16px;
+  width: 185px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: hsl(180, 66%, 49%);
+}
+.header__container__button:hover {
+  cursor: pointer;
+  background-color: hsl(180, 91%, 58%);
+}
+
+.statistics {
+  padding-top: 140px;
+  background-color: hsl(0, 0%, 75%);
+}
+.statistics__container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.statistics__container__links {
+  position: absolute;
+  width: 100%;
+  top: -220px;
+  padding: 24px;
+  border-radius: 8px;
+  background-image: url("../images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: hsl(257, 27%, 26%);
+}
+.statistics__container__links form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.statistics__container__links form input, .statistics__container__links form button {
+  padding: 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+.statistics__container__links form button {
+  font-size: 18px;
+  color: #fff;
+  background-color: hsl(180, 66%, 49%);
+  font-weight: 700;
+}
+.statistics__container__links form button:hover {
+  cursor: pointer;
+  background-color: hsl(180, 91%, 58%);
 }/*# sourceMappingURL=style.css.map */

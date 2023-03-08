@@ -1,6 +1,12 @@
 const btnOpen = document.querySelector('.open');
 const btnClose = document.querySelector('.close');
 const navbar = document.querySelector('.nav__container__items');
+const form = document.querySelector('form');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+});
 
 btnOpen.addEventListener('click' , () => {
     btnOpen.style.display = 'none';
