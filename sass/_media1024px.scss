@@ -146,18 +146,33 @@
         
                 form{
                     flex-direction: row;
+                    justify-content: space-between;
 
                     input{
                         width: 80%;
                     }
+
+                    input.error{
+                        margin-bottom: 0;
+                    }
+    
+                    .email-error{
+                        // display: none;
+                        // position: absolute;
+                        top: 95px;
+                        // font-size: 13px;
+                        // color: $red;
+                    }
         
                     button{
                         padding: 16px 32px;
+                        width: 20%;
                     }
                 }
             }
     
             &__cards{
+                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 25px;
@@ -181,11 +196,11 @@
                         font-size: 15px;
                     }
 
-                    &:first-child{
+                    &:nth-child(2){
                         align-self: flex-start;
                     }
 
-                    &:last-child{
+                    &:nth-child(4){
                         align-self: flex-end;
                     }
                 }
@@ -212,6 +227,7 @@
             text-align: left;
             width: 90%;
             max-width: 1100px;
+            margin: 0 auto;
     
             &__logo{
                 margin-right: 130px;

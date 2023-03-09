@@ -174,14 +174,35 @@ body {
 .statistics__container__links form input, .statistics__container__links form button {
   padding: 16px;
   border-radius: 6px;
-  border: none;
   font-size: 16px;
+  width: 100%;
+}
+.statistics__container__links form input::-moz-placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.statistics__container__links form input::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.statistics__container__links form input {
+  border: transparent;
+}
+.statistics__container__links form input.error {
+  margin-bottom: 10px;
+  border: 2px solid hsl(0, 87%, 67%);
+}
+.statistics__container__links form .email-error {
+  display: none;
+  position: absolute;
+  top: 80px;
+  font-size: 13px;
+  color: hsl(0, 87%, 67%);
 }
 .statistics__container__links form button {
   font-size: 18px;
   color: #fff;
   background-color: hsl(180, 66%, 49%);
   font-weight: 700;
+  border: none;
 }
 .statistics__container__links form button:hover {
   cursor: pointer;
@@ -461,14 +482,23 @@ body {
   }
   .statistics__container__links form {
     flex-direction: row;
+    justify-content: space-between;
   }
   .statistics__container__links form input {
     width: 80%;
   }
+  .statistics__container__links form input.error {
+    margin-bottom: 0;
+  }
+  .statistics__container__links form .email-error {
+    top: 95px;
+  }
   .statistics__container__links form button {
     padding: 16px 32px;
+    width: 20%;
   }
   .statistics__container__cards {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 25px;
@@ -489,10 +519,10 @@ body {
   .statistics__container__cards .card__p {
     font-size: 15px;
   }
-  .statistics__container__cards .card:first-child {
+  .statistics__container__cards .card:nth-child(2) {
     align-self: flex-start;
   }
-  .statistics__container__cards .card:last-child {
+  .statistics__container__cards .card:nth-child(4) {
     align-self: flex-end;
   }
   .boost {
@@ -509,6 +539,7 @@ body {
     text-align: left;
     width: 90%;
     max-width: 1100px;
+    margin: 0 auto;
   }
   .footer__container__logo {
     margin-right: 130px;
