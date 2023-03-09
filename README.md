@@ -19,7 +19,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ### Links
 
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://phenomenal-kitten-3056eb.netlify.app/)
 
 ## My process
 
