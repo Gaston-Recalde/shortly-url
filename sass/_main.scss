@@ -95,6 +95,7 @@
 
             .close{
                 display: none;
+                transform: rotate(45deg);
             }
         }
     }
@@ -259,10 +260,6 @@
                 padding-top: 75px;
                 border-radius: 8px;
                 width: 338px;
-
-                // &:first-child{
-                //     align-self: inherit;
-                // }
 
                 &__img{
                     position: absolute;
